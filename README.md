@@ -52,5 +52,22 @@ Route::get('lang/{locale}', function ($locale) {
 ```
 ### Now Make blade File , Any Lang Make same Name File 
 like ::: bn ->language.php
+``` php
 
+<?php
+ 
+    return [
+        'Civil-Service'                         => 'নাগরিক সেবা',     
+   ];
+
+```
+like ::: en ->language.php
+
+```php
+<?php
+ 
+    return [
+        'Civil-Service'                         => 'Nagorik Seba',
+   ];
+```
 
