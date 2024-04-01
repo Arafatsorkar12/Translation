@@ -41,3 +41,15 @@ Route::get('lang/{locale}', function ($locale) {
                 </li>
 ```
 
+### Now reate Lang File 
+
+```php
+ 
+├── resources
+│   └──  lang
+          ├── bn ->language.php
+          └── en ->language.php
+```
+### Now Make blade File , Any Lang Make same Name File 
+like ::: bn ->language.php
+
