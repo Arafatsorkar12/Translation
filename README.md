@@ -70,4 +70,7 @@ like ::: en ->language.php
         'Civil-Service'                         => 'Nagorik Seba',
    ];
 ```
-
+### Now Blade Dyanmic 
+```php
+{{ __('language.Civil-Service') }}
+```
