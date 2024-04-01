@@ -53,3 +53,4 @@ Route::get('lang/{locale}', function ($locale) {
 ### Now Make blade File , Any Lang Make same Name File 
 like ::: bn ->language.php
 
+
