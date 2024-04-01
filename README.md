@@ -1,1 +1,22 @@
 # Translation
+###First__MAke_Middleware 
+```php
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+use Illuminate\Http\Request;
+
+class LanguageControlMiddleware
+{
+
+    public function handle(Request $request, Closure $next)
+    {
+        if (session()->has('locale')) {
+            app()->setLocale(session('locale'));
+        }
+        return $next($request);
+    }
+}
+```
