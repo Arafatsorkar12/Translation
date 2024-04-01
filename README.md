@@ -20,3 +20,24 @@ class LanguageControlMiddleware
     }
 }
 ```
+
+### Now Make Route 
+
+```php
+Route::get('lang/{locale}', function ($locale) {
+    session(['locale' => $locale]);
+    return redirect()->back();
+})->name('lang.switch');
+
+```
+### Make button That change Lang
+```php
+<li class="light-10" title="Change Language">
+                    @if(app()->getLocale() === 'en')
+                        <a href="{{ route('lang.switch', 'bn') }}"  style="background-color: #00BE67 !important; color: #ffffff !important; font-size: 15px; font-weight: bolder !important;">বাংলা</a>
+                    @else
+                        <a href="{{ route('lang.switch', 'en') }}" style="background-color: #00BE67 !important; color: #ffffff !important; font-size: 15px; font-weight: bolder !important;">English</a>
+                    @endif
+                </li>
+```
+
