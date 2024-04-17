@@ -22,11 +22,12 @@ class LanguageControlMiddleware
 ```
 ## Registation 
 
+``php
 
 ├── App
 │   └──  HTTP
           └── Kernel.php
- 
+ ```
 ```php
 
   use App\Http\Middleware\LanguageControlMiddleware;
