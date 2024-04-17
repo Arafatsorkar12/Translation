@@ -20,6 +20,27 @@ class LanguageControlMiddleware
     }
 }
 ```
+## Registation 
+
+
+├── App
+│   └──  HTTP
+          └── Kernel.php
+ 
+```php
+
+  use App\Http\Middleware\LanguageControlMiddleware;
+  protected $middlewareGroups = [
+        'web' => [
+           
+            LanguageControlMiddleware::class,
+        ],
+
+        'api' => [
+      
+        ],
+    ];
+```
 
 ### Now Make Route 
 
