@@ -22,7 +22,7 @@ class LanguageControlMiddleware
 ```
 ## Registation 
 
-``php
+```php
 
 ├── App
 │   └──  HTTP
